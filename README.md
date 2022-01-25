@@ -1,12 +1,20 @@
-## Micronaut 3.1.4 Documentation
+# mn-atp-mongo
 
-- [User Guide](https://docs.micronaut.io/3.1.4/guide/index.html)
-- [API Reference](https://docs.micronaut.io/3.1.4/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/3.1.4/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+## Testing
 
-## Feature http-client documentation
+### Create Book
 
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
+```shell
+$ curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"title": "The Stand", "pages": 454}' \
+  localhost:8080/book
+```
 
+### Update Book
+
+### Get Books
+
+### Get Book by Id
+
+### Delete Book

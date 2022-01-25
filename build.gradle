@@ -22,8 +22,9 @@ micronaut {
 }
 
 dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor "org.projectlombok:lombok:1.18.12"
     annotationProcessor("io.micronaut.data:micronaut-data-document-processor:3.2.3-SNAPSHOT")
-
     annotationProcessor("io.micronaut:micronaut-http-validation")
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut:micronaut-runtime")

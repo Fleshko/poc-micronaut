@@ -1,3 +1,5 @@
 micronaut:
   application:
     name: ociAtpMongo
+mongodb:
+  uri: ${MONGODB_URI}
