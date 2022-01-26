@@ -14,7 +14,7 @@ import org.bson.types.ObjectId;
 public class Book {
     @Id
     @GeneratedValue
-    private ObjectId id;
+    private String id;
     private String title;
     private int pages;
 }

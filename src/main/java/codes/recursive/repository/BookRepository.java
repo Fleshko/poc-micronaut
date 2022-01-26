@@ -7,7 +7,7 @@ import io.micronaut.data.repository.CrudRepository;
 import org.bson.types.ObjectId;
 
 @MongoRepository
-public interface BookRepository extends CrudRepository<Book, ObjectId> {
+public interface BookRepository extends CrudRepository<Book, String> {
     @Executable
     Book find(String title);
 }

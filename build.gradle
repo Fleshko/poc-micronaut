@@ -9,7 +9,6 @@ group = "codes.recursive"
 
 repositories {
     mavenCentral()
-    maven { url "https://s01.oss.sonatype.org/content/repositories/snapshots/" }
 }
 
 micronaut {
@@ -24,15 +23,17 @@ micronaut {
 dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.12'
     annotationProcessor "org.projectlombok:lombok:1.18.12"
-    annotationProcessor("io.micronaut.data:micronaut-data-document-processor:3.2.3-SNAPSHOT")
+    annotationProcessor("io.micronaut.data:micronaut-data-document-processor:3.3.0-M1")
     annotationProcessor("io.micronaut:micronaut-http-validation")
+    implementation("io.micronaut.serde:micronaut-serde-bson:1.0.0-M6")
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut:micronaut-runtime")
     implementation("javax.annotation:javax.annotation-api")
     runtimeOnly("ch.qos.logback:logback-classic")
     implementation("io.micronaut:micronaut-validation")
-
-    implementation("io.micronaut.data:micronaut-data-mongodb:3.2.3-SNAPSHOT")
+    implementation("io.micronaut.data:micronaut-data-mongodb:3.3.0-M1") {
+        exclude module:'micronaut-inject-java'
+    }
     implementation("org.mongodb:mongodb-driver-sync")
 }
 
