@@ -13,7 +13,7 @@ $ curl -i -X POST \
 
 Sample return value:
 
-```json
+```shell
 HTTP/1.1 201 Created
 date: Wed, 26 Jan 2022 19:11:31 GMT
 Content-Type: application/json
