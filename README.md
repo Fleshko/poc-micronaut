@@ -66,7 +66,7 @@ connection: keep-alive
 ### Get Book by Id
 
 ```shell
-$ curl localhost:8080/book/61f19db7c83ba32b4ca5a468
+$ curl -i localhost:8080/book/61f19db7c83ba32b4ca5a468
 ```
 
 Sample return value:
