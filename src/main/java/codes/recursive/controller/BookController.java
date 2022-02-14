@@ -4,7 +4,6 @@ import codes.recursive.domain.Book;
 import codes.recursive.repository.BookRepository;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.annotation.*;
-import org.bson.types.ObjectId;
 
 @Controller("/book")
 @SuppressWarnings({"rawtypes"})
