@@ -2,5 +2,5 @@ micronaut:
   application:
     name: ociAtpMongo
 mongodb:
-  uri: mongodb+srv://admin:w4MhYMpvVtWpvnsx@rp-aon6.5rr644u.mongodb.net/development
+  uri:
   default-collection: defenses
